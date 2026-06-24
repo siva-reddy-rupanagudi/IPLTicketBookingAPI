@@ -1,4 +1,4 @@
-package com.belenits.iplticketbookingapi;
+package com.belenits.iplticketbookingapi.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

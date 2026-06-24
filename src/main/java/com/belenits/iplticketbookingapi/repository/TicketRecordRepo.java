@@ -1,4 +1,9 @@
 package com.belenits.iplticketbookingapi.repository;
 
-public interface TicketRecordRepo {
+import com.belenits.iplticketbookingapi.entities.TicketRecord;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TicketRecordRepo extends JpaRepository<TicketRecord,Integer> {
 }

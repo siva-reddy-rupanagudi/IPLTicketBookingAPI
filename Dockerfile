@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+FROM eclipse-temurin:21
 LABEL authors="Belen ITS"
-
-ENTRYPOINT ["top", "-b"]
+WORKDIR /app
+COPY target/IPLTicketBookingAPI.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
