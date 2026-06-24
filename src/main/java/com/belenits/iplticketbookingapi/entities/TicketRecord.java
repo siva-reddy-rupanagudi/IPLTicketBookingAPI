@@ -22,7 +22,7 @@ public class TicketRecord {
     @Column(name = "matchDetails")
     private String matchDetails;
     @NonNull
-    @Column(unique = true)
+    @Column(name = "seatNumber")
     private String seatNumber;
     @Column(name = "ticketPrice")
     private String ticketPrice;
